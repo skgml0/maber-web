@@ -1,0 +1,197 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Outfit:wght@900&display=swap');
+/* 로고 폰트 900/
+/ font-family: 'Outfit', sans-serif; /
+/ 바디 400, 700 /
+/ font-family: 'Nanum Gothic', sans-serif; */
+@keyframes slides {
+ 0% {
+   margin-left: 0;
+ }
+ 40% {
+   margin-left: 0;
+ }
+ 50% {
+   margin-left: -100%;
+ }
+ 90% {
+   margin-left: -100%;
+ }
+ 100% {
+   margin-left: -200%;
+ }
+}
+body {
+ font-family: 'Nanum Gothic', sans-serif;
+}
+.header {
+ width: 100%;
+ height: 70px;
+ display: flex;
+ color: white;
+ background-color: none;
+ justify-content: space-between;
+ padding: 18px 20px 11px;
+ box-sizing: border-box;
+ z-index: 10;
+}
+.logo {
+ margin: 4px 0 28px;
+}
+.logo strong {
+ font-family: 'Outfit', sans-serif;
+ font-size: 20px;
+}
+.logo em {
+ vertical-align: 2px;
+}
+.nav__btn--mobile {
+ width: 30px;
+ height: 30px;
+ border: none;
+ background: no-repeat url(/img/list.svg);
+ background-size: 100% 100%;
+}
+.nav__menu {
+ display: none;
+}
+main {
+ background-color: none;
+ margin-top: -70px;
+ z-index: 0;
+}
+.header-slides {
+ width: 100%;
+ position: relative;
+ overflow: hidden;
+}
+.header-slides::before {
+ content: '';
+ position: absolute;
+ top: 143px;
+ left: 7px;
+ width: 25px;
+ height: 40px;
+ background: url('../img/slide-left.svg') no-repeat;
+ background-size: cover;
+}
+.header-slides::after {
+ content: '';
+ position: absolute;
+ top: 143px;
+ right: 7px;
+ width: 25px;
+ height: 40px;
+ background: url('../img/slide-right.svg') no-repeat;
+ background-size: cover;
+}
+.slide {
+ display: flex;
+ width: calc(100% * 3);
+ height: 314px;
+ position: relative;
+ /* animation: slides 8s linear infinite; */
+}
+.slide > div {
+ width: calc(100%);
+ z-index: -1;
+ background-size: cover;
+}
+.slide1 {
+ background: no-repeat url('../img/back1.png');
+}
+.slide2 {
+ background: no-repeat url('../img/back2.jpg');
+}
+ 
+.slide > div {
+ display: flex;
+ padding-top: 137px;;
+ align-items: center;
+ flex-direction: column;
+ color: #fff;
+}
+.slide em,
+.slide strong {
+ line-height: 31px;
+ letter-spacing: -1px;
+ text-shadow: 2px 2px 6px rgb(0 0 0 / 40%);
+}
+/* slide1 */
+.slide1 em {
+ font-size: 27px;
+ font-weight: 700;
+}
+.slide1 strong {
+ font-size: 22px;
+}
+.slide1 a {
+ margin-top: 20px;
+ font-size: 14px;
+}
+/* slide2 */
+.slide2 em {
+}
+.slide2 strong {
+}
+.slide2 a {
+ margin-top: 20px;
+ font-size: 14px;
+}
+ 
+.slide > div > a::after {
+ content: '';
+ float: right;
+ width: 11px;
+ height: 13px;
+ background: url('../img/chevron-right.svg') no-repeat;
+ background-size: cover;
+}
+ 
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  
+}
+.category li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 77px;
+  text-align: center;
+  border : 1px solid #f2f2f2;
+  box-sizing: border-box;
+}
+.category li::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 77px;
+  background-color: #f2f2f2;
+  content: '';
+}
+.category a {
+  
+}
+.category em {
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 6px;
+  vertical-align: middle;
+}
+.category span {
+  font-weight: 700;
+  font-size: 12px;
+  padding: 2px 6px 3px;
+  border-radius: 10px;
+  background-color: #00b800;
+  color:white;
+  vertical-align: -1px;
+
+}
+/* culture-sect */
