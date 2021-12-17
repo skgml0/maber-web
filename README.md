@@ -12,6 +12,10 @@
 # 프로그래밍 방식
 : 페어 프로그래밍
 
+# GIT배포
+
+https://skgml0.github.io/maber-web/
+
 # trouble shooting
 1. z-index 와 css우선순위
 
