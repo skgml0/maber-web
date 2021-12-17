@@ -14,6 +14,7 @@
 
 # trouble shooting
 1. z-index 와 css우선순위
+z-index를 음수로 지정 하였을 경우 부모 요소가 display가 block인 경우 부모요소 밑에 깔리게 되어 a태그나 버튼 클릭이 되지 않고 부모요소에 배경이 있을 경우 안보이게 되는 현상.
 
 2. animation slide 
 
